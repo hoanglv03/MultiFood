@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native'
+import React, { Component } from 'react'
+import HelloScreen from './MainsScreens/ScreensWelcome/HelloScreen';
+import TutorialScreen from './MainsScreens/ScreensWelcome/TutorialScreen';
+import StackScreenLogin from './MainsScreens/ScreensLogin/StackScreenLogin';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends Component {
+  constructor(props){
+    super(props);
+    this.state ={currentScreen: "HelloScreen"};
+    setTimeout(()=>{
+      this.setState({currentScreen:'StackScreenLogin'})
+    },3500)
+  }
+  render() {
+      const {currentScreen} = this.state
+      let tutorialScreen = currentScreen === 'HelloScreen' ? <HelloScreen />:<StackScreenLogin/>
+      return tutorialScreen
+    
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}
