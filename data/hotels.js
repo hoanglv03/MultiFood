@@ -6,7 +6,7 @@ export default[
         rate: '4.2',
         timeShip:'32 min',
         fee:'Giao hàng miễn phí',
-        img:require('../Image/image-hotel-1.jpg')
+        img:require('../Image/image-hotel-2.jpg')
     },
 
     {
@@ -38,6 +38,15 @@ export default[
     },
     {
         id:5,
+        nameHotel:'KFC',
+        foodCategory:['Đồ ăn việt','Đồ ăn Tây','Đồ ăn Thái'],
+        rate: '5',
+        timeShip:'12 min',
+        fee:'Giao hàng miễn phí',
+        img:require('../Image/image-hotel-5.jpg')
+    },
+    {
+        id:6,
         nameHotel:'KFC',
         foodCategory:['Đồ ăn việt','Đồ ăn Tây','Đồ ăn Thái'],
         rate: '5',

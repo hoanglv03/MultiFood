@@ -10,6 +10,9 @@ import VerifyPhoneNumber from './VerifyPhoneNumber';
 import ResetPassword from './ResetPassword';
 import StackScreens from '../../MainsScreens/StackScreens'
 import Restaurants from '../ScreenRestaurants/Restaurants';
+import Location from '../Maps/Location';
+import Maps from '../Maps/Maps';
+import SingleRestaurant from '../ScreenRestaurants/SingleRestaurant';
 const Stack = createStackNavigator();
 
 export default function StackScreenLogin() {
@@ -24,6 +27,10 @@ export default function StackScreenLogin() {
          <Stack.Screen  name="ResetPassword" component={ResetPassword} />
          <Stack.Screen  name="StackScreens" component={StackScreens} />
          <Stack.Screen  name="Restaurants" component={Restaurants} />
+         <Stack.Screen  name="Location" component={Location} />
+         <Stack.Screen  name="Maps" component={Maps} />
+         <Stack.Screen  name="SingleRestaurant" component={SingleRestaurant} />
+         
     </Stack.Navigator>
     </NavigationContainer>
   )

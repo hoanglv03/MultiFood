@@ -15,15 +15,17 @@
     "@react-navigation/stack": "^6.3.16",
     "expo": "~48.0.5",
     "expo-blur": "~12.2.2",
+    "expo-font": "~11.1.1",
+    "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
     "react-native": "0.71.6",
     "react-native-gesture-handler": "~2.9.0",
+    "react-native-google-places-autocomplete": "^2.5.1",
     "react-native-ionicons": "^4.6.5",
-    "react-native-vector-icons": "^9.2.0",
-    "expo-font": "~11.1.1",
-    "expo-splash-screen": "~0.18.1",
-    "react-native-pager-view": "6.1.2"
+    "react-native-maps": "^1.4.0",
+    "react-native-pager-view": "6.1.2",
+    "react-native-vector-icons": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

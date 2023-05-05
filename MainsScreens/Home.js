@@ -27,9 +27,10 @@ export default function Home({navigation}) {
         fontFamily:'Product-Sans-Bold',
         marginTop:26,
         color:'#D42323',
-        
       }}>Giao hàng đến</Text>
-      <Text style={{
+      <Text onPress={()=>{
+        navigation.navigate("Location")
+      }} style={{
         fontFamily:'Product-Sans-Bold',
         marginTop:8,
         color:'#000000',
@@ -76,7 +77,7 @@ export default function Home({navigation}) {
         marginBottom:10
       }}>Nhà hàng nổi bật</Text>
       <Text onPress={()=>{
-        setShowRestaurants(true)
+        navigation.navigate("Restaurants")
       }} style={{
         color:'#D42323',
         fontFamily:'Product-Sans-Bold',
