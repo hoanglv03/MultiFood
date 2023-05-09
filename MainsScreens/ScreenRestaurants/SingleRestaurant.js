@@ -12,10 +12,9 @@ import { Ionicons } from "@expo/vector-icons";
 import FoodItem from "../../component/FoodItem";
 import ListFood from "../../component/ListFood";
 import CategoryFood from "../../component/CategoryFood";
-import FoodPopulars from "../../component/Restaurant/FoodPopulars"
+import FoodPopulars from "../../component/Restaurant/FoodPopulars";
 export default function SingleRestaurant({ route, navigation }) {
   var objRestaurant = route.params.item;
-
   return (
     <ScrollView
       style={{
@@ -203,7 +202,7 @@ export default function SingleRestaurant({ route, navigation }) {
             </Text>
           </View>
         </View>
-        <ListFood />
+        <ListFood navigation={navigation} />
       </View>
       <View style={{ marginTop: 20, marginLeft: 20 }}>
         <CategoryFood />
@@ -212,25 +211,23 @@ export default function SingleRestaurant({ route, navigation }) {
             fontFamily: "Product-Sans-Bold",
             fontSize: 20,
             marginTop: 16,
-            marginBottom:20
+            marginBottom: 20,
           }}
         >
           Phổ biến nhất
         </Text>
-        <FoodPopulars/>
+        <FoodPopulars />
         <Text
           style={{
             fontFamily: "Product-Sans-Bold",
             fontSize: 20,
-            marginBottom:20
-            
+            marginBottom: 20,
           }}
         >
           Món ăn ngon
         </Text>
-       
+
         <FoodPopulars />
-        
       </View>
     </ScrollView>
   );

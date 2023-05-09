@@ -1,12 +1,14 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function FoodItem({ item }) {
+export default function FoodItem({ item ,navigation}) {
   return (
     <View style={styles.container}>
       <Image source={item.img} resizeMode="cover" style={styles.img} />
       <View style={styles.content}>
-        <Text style={{
+        <Text onPress={()=>{
+          navigation.navigate("MenuTopping",{item:item})
+        }} style={{
             fontFamily: "Product-Sans-Bold",
             fontSize:16,
             color:'#505050'
